@@ -1,13 +1,17 @@
-const { Client, Intents } = require("discord.js");
+const { Client, Intents, User, Guild } = require("discord.js");
 const { token } = require("./token.json");
-
+const utilisateur = ""
 const client = new Client({
   intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES],
 });
 
+const test = [];
+
 client.on("ready", () => {
   console.log("loggedOn");
 });
+
+
 
 client.on("messageCreate", (message) => {
   console.log("ok");
@@ -17,7 +21,7 @@ client.on("messageCreate", (message) => {
       .then((message) => console.log(`Sent message: ${message.content}`));
   } else if (message.toString() == "Et ça fait") {
     message
-      .reply("BIM BAM BOUM")
+      .reply("BIM " + "BAM " + "BOUM")
       .then(() => console.log(`Replied to message "${message.content}"`));
   } //else if (message.toString() == "thinking") {
    // message.Id({919954725108068352}).react("🤔").then(console.log).catch(console.error);} 
@@ -37,6 +41,18 @@ client.on("messageCreate", (message) => {
       .send(":falcon:")
       .then((message) => console.log(`Sent message: ${message.content}`));
   }
+  else if (message.toString() == "fnatrique") {
+    const fnc = test.push('fnc est la pire équipe du monde ptdr');
+    message.channel
+    .send(test[0])
+    .then((message) => console.log(`Sent message: ${message.content}`));
+  }
+  else if (message.toString() == "okfrer") {
+    message.channel
+    .send(`tu as été ajouté à la liste de course de chevaux monsieur ${message.author}`)
+    .then((message) => console.log(`Sent message: ${message.content}`));
+    
+  } 
 });
 
 client.login(token);

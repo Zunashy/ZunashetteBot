@@ -1,0 +1,30 @@
+{
+    "resultat": {
+        
+        "fnatic" : 0,
+        "g2esport" : 0,
+        "rogue" : 0,
+        "madlions" : 0,
+        "bds" : 0,
+        "vitality" : 0,
+        "xlesport" : 0,
+        "astralis" : 0,
+        "misfit" : 0,
+        "skgaming" : 0
+    },
+
+
+    "Zunashy": {
+        "fnatic" : 1,
+        "g2esport" : 3,
+        "rogue" : 9,
+        "madlions" : 4,
+        "bds" : 6,
+        "vitality" : 2,
+        "xlesport" : 7,
+        "astralis" : 10,
+        "misfit" : 5,
+        "skgaming" : 8
+    }
+
+}
